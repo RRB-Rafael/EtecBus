@@ -158,6 +158,18 @@ function getDistance(c1, c2) {
 
 
 export default function App() {
+  const webViewRef = useRef(null);
+
+  const [userLocation, setUserLocation] = useState(null);
+  const [nearestStop, setNearestStop] = useState(null);
+  const [selectedStop, setSelectedStop] = usestate(null);
+  const [locationGranted, setLocationGranted] = useState(false);
+  const [loading, setLoading] = usesState(true);
+
+  useEffect(() => {
+    ()
+  }, []);
+
   return (
     <View style={styles.container}>
       <Text>Vamos lá!</Text>
